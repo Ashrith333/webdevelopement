@@ -1,1 +1,2 @@
 "npm init" to write in json file abt packages 
+npm install express ejs --save packages instalation

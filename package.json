@@ -1,0 +1,27 @@
+{
+  "name": "webdevelopment",
+  "version": "1.0.0",
+  "description": "My practice web development ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashrith333/webdevelopement.git"
+  },
+  "keywords": [
+    "Web",
+    "Development"
+  ],
+  "author": "Ashrith Reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashrith333/webdevelopement/issues"
+  },
+  "homepage": "https://github.com/Ashrith333/webdevelopement#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1"
+  }
+}

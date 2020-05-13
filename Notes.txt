@@ -1,0 +1,1 @@
+"npm init" to write in json file abt packages 

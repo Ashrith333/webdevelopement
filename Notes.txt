@@ -1,2 +1,19 @@
+cmd 
+mkdir - make directory
+cd name - open directory
+ls - back
+cat name.json - veiw json files
+echo $null >> app.js  - create js file 
+
+
+
+
+
+
+ ---------------------------------------------------------
 "npm init" to write in json file abt packages 
 npm install express ejs --save packages instalation
+npm install -g localtunnel  url package
+lt --port 3000 gives url
+npm install ngrok -g --save
+ngrok http 8080

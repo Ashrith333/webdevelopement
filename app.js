@@ -7,9 +7,15 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
 var campground=[
-    {name:"sam1",  image:"https://homepages.cae.wisc.edu/~ece533/images/girl.png"}
-    ,{name:"sam2", image:"https://homepages.cae.wisc.edu/~ece533/images/girl.png"}
-    ,{name:"sam3", image:"https://homepages.cae.wisc.edu/~ece533/images/girl.png"}      
+    {name:"sam1",  image:"https://picsum.photos/200"}
+    ,{name:"sam2", image:"https://picsum.photos/200"}
+    ,{name:"sam3", image:"https://picsum.photos/200"}
+    ,{name:"sam4", image:"https://picsum.photos/200"}
+    ,{name:"sam5", image:"https://picsum.photos/200"}
+    ,{name:"sam6", image:"https://picsum.photos/200"}
+    ,{name:"sam7", image:"https://picsum.photos/200"}
+    ,{name:"sam8", image:"https://picsum.photos/200"}
+    ,{name:"sam9", image:"https://picsum.photos/200"}      
 ];
 
 
@@ -35,4 +41,4 @@ app.get("/campgrounds/new",function(req,res){
     res.render("new")
 })
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+app.listen(port, () => console.log(`Connected! URL-  http://localhost:${port}`));

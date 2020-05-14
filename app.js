@@ -19,7 +19,7 @@ app.get("/", function (req, res) {
 
 app.get("/campgrounds",function(req,res){
 
-res.render("ash",{campground:campground});
+res.render("campground",{campground:campground});
 })
 
 app.post("/campgrounds",function(req,res){

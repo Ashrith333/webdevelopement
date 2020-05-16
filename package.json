@@ -20,6 +20,11 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
-    "http": "0.0.1-security"
+    "express-handlebars": "^4.0.4",
+    "http": "0.0.1-security",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.14",
+    "nodemon": "^2.0.4",
+    "save": "^2.4.0"
   }
 }

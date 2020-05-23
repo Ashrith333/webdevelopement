@@ -26,7 +26,7 @@ app.get("/campgrounds",function(req,res){
         if(err){
             console.log(err);}
             else{
-                res.render("index",{campground:allcampgrounds});
+                res.render("campgrounds/index",{campground:allcampgrounds});
             }
         
     })
@@ -47,7 +47,7 @@ app.post("/campgrounds",function(req,res){
         
 });
 app.get("/campgrounds/new",function(req,res){
-    res.render("new")
+    res.render("campgrounds/new")
 });
 
 app.get('/campgrounds/:id', function(req, res)  {
@@ -56,10 +56,14 @@ app.get('/campgrounds/:id', function(req, res)  {
             console.log("id description page error");
         } else{
             console.log(foundCampground);
-            res.render("show",{campground: foundCampground});
+            res.render("campgrounds/show",{campground: foundCampground});
         }
     });
      
-})
+});
+//----------------comments---------------------------------------
 
+app.get("/campgrounds/:id/comments/new",function(req,res){
+    res.render("comments/new");
+})
 app.listen(port, () => console.log(`Connected! URL-  http://localhost:${port}`));

@@ -25,3 +25,15 @@ Index     /dogs        get      display all /dogs
 new       /dogs/new     get      form to add new /dogs
 Create    /dogs         Post      adds new /dogs
 Show      /dogs/:id     Get      gives detaild info
+
+
+
+
+Index      /campgrounds 
+new        /campgrounds/new
+create     /campgrounds
+show       /campground/:id
+
+
+New       /campground/:id/comments/new   Get
+create    /campground/:id/comments       Post

@@ -3,32 +3,16 @@ var bodyparser      = require("body-parser");
 var app             = express();
 var port            = 3000;
 var mongoose        = require("mongoose");
-
+var Campground = require("./models/campground");
+// var Comments = require("./models/comments")
+var seedDB= require("./seeds");
 
 app.use(bodyparser.urlencoded({extended: true}));
 mongoose.connect("mongodb://localhost:27017/image", {useUnifiedTopology: true,useNewUrlParser: true,}).then(() => console.log('DB Connected!'))
 .catch(err => {console.log("error");});
 app.set("view engine", "ejs");
 
-
-
-
-
-
-var campgroundSchema= new mongoose.Schema({
-    name: String, image :String, description: String
-});
-
-var Campground= mongoose.model("Campground",campgroundSchema);
-// for editing data base
-//  Campground.r({name:"Pug"
-//    , image: "https://images.pexels.com/photos/374906/pexels-photo-374906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-//    description :"cute and playful"},function(err,image){
-//    if(err){
-//        console.log("error");
-//    }else{
-//        console.log("Image stored in data base");
-//    }});
+seedDB();
 
 
 app.get("/", function (req, res) {
@@ -64,18 +48,18 @@ app.post("/campgrounds",function(req,res){
 });
 app.get("/campgrounds/new",function(req,res){
     res.render("new")
-})
+});
 
-app.get('/campgrounds/:id', (req, res) => {
-    Campground.findById(req.params.id,function(err,foundCampground){
+app.get('/campgrounds/:id', function(req, res)  {
+    Campground.findById(req.params.id).populate("comments").exec(function(err,foundCampground){
         if(err){
-            console.log("id description page error")
+            console.log("id description page error");
         } else{
+            console.log(foundCampground);
             res.render("show",{campground: foundCampground});
         }
-    })
-    
-    
-});
+    });
+     
+})
 
 app.listen(port, () => console.log(`Connected! URL-  http://localhost:${port}`));

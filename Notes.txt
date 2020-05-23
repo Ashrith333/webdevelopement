@@ -17,3 +17,11 @@ npm install -g localtunnel  url package
 lt --port 3000 gives url
 npm install ngrok -g --save
 ngrok http 8080
+
+
+Restful Routes
+
+Index     /dogs        get      display all /dogs
+new       /dogs/new     get      form to add new /dogs
+Create    /dogs         Post      adds new /dogs
+Show      /dogs/:id     Get      gives detaild info

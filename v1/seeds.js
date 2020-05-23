@@ -5,17 +5,19 @@ var data = [
     {
          name:"Dashhound "
         ,image: "https://images.pexels.com/photos/257519/pexels-photo-257519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        ,description: "1yoyoyoyoyoyoyoyoyo"
+        ,description: "Writing that is intended to be edited, such as schoolpapers and rough drafts, uses both blank lines and indentation for separation. In finished works, combining both is considered redundant and amateurish.Separating paragraphs with blank lines is easiest for readers to scan, but they can also be separated by indenting their first lines. This is often used  to take up less space, such as to save paper in print"
     },
     {
         name:"husky "
        ,image: "https://images.pexels.com/photos/247937/pexels-photo-247937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-       ,description: "2yoyoyoyoyoyoyoyoyo"
+       ,description: "Writing that is intended to be edited, such as schoolpapers and rough drafts, uses both blank lines and indentation for separation. In finished works, combining both is considered redundant and amateurish.Separating paragraphs with blank lines is easiest for readers to scan, but they can also be separated by indenting their first lines. This is often used  to take up less space, such as to save paper in print"
+
    },
    {
     name:"Pug "
    ,image: "https://images.pexels.com/photos/374906/pexels-photo-374906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-   ,description: "3 yoyoyoyoyoyoyoyoyo"
+   ,description: "Writing that is intended to be edited, such as schoolpapers and rough drafts, uses both blank lines and indentation for separation. In finished works, combining both is considered redundant and amateurish.Separating paragraphs with blank lines is easiest for readers to scan, but they can also be separated by indenting their first lines. This is often used  to take up less space, such as to save paper in print"
+
     }
 ];
  

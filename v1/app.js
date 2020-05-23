@@ -12,7 +12,8 @@ app.use(bodyparser.urlencoded({extended: true}));
 mongoose.connect("mongodb://localhost:27017/image", {useUnifiedTopology: true,useNewUrlParser: true,}).then(() => console.log('DB Connected!'))
 .catch(err => {console.log("error");});
 app.set("view engine", "ejs");
-
+app.use(express.static(__dirname + "/public"));
+console.log(__dirname);
 seedDB();
 
 
